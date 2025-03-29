@@ -14,13 +14,13 @@
     "javascript",
     "browser"
   ],
-  "homepage": "https://github.com/helen25sur/tiny-storage#readme",
+  "homepage": "https://github.com/helen25sur/tiny-shelf#readme",
   "bugs": {
-    "url": "https://github.com/helen25sur/tiny-storage/issues"
+    "url": "https://github.com/helen25sur/tiny-shelf/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helen25sur/tiny-storage.git"
+    "url": "git+https://github.com/helen25sur/tiny-shelf.git"
   },
   "license": "MIT",
   "author": "Olena Surilova",
