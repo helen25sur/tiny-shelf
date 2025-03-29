@@ -23,7 +23,7 @@
     "url": "git+https://github.com/helen25sur/tiny-storage.git"
   },
   "license": "MIT",
-  "author": "Olena Surilova",
+  "author": "helen25sur",
   "type": "module",
   "main": "index.js",
   "scripts": {
