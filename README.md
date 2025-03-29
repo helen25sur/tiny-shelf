@@ -4,7 +4,7 @@
 
 ## Using
   ```
-  import { TinyShelf } from "./index.js";
+  import { TinyShelf } from 'tiny-shelf';
   const storage = new TinyShelf("local");
   storage.set("user", { name: "Alice" }, { expires: 30000 });
   console.log(storage.get("user"));

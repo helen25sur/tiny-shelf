@@ -1,4 +1,4 @@
-class TinyStore {
+class TinyShelf {
   constructor(type = "local") {
     this.store = type === "session" ? sessionStorage : localStorage;
   }
@@ -32,4 +32,4 @@ class TinyStore {
   }
 }
 
-export default new TinyStore();
+export default TinyShelf;
