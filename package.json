@@ -1,0 +1,32 @@
+{
+  "name": "tiny-store",
+  "version": "1.0.0",
+  "description": "tiny-store is a lightweight and easy-to-use browser storage manager. It provides a unified API for localStorage and sessionStorage, supports automatic expiration (expires)",
+  "keywords": [
+    "storage",
+    "store",
+    "localStorage",
+    "sessionStorage",
+    "tiny",
+    "lightweight",
+    "cache",
+    "expiration",
+    "javascript",
+    "browser"
+  ],
+  "homepage": "https://github.com/helen25sur/tiny-storage#readme",
+  "bugs": {
+    "url": "https://github.com/helen25sur/tiny-storage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helen25sur/tiny-storage.git"
+  },
+  "license": "MIT",
+  "author": "Olena Surilova",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
