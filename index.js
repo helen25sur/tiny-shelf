@@ -1,4 +1,4 @@
-class TinyShelf {
+export class TinyShelf {
   constructor(type = "local") {
     this.store = type === "session" ? sessionStorage : localStorage;
   }
@@ -6,7 +6,7 @@ class TinyShelf {
   set(key, value, options = {}) {
     const data = {
       value,
-      expires: options.expires ? Date.now() + options.expires * 60000 : null,
+      expires: options.expires ? (Date.now() + options.expires) : null,
     };
     this.store.setItem(key, JSON.stringify(data));
   }
@@ -31,5 +31,3 @@ class TinyShelf {
     this.store.clear();
   }
 }
-
-export default TinyShelf;

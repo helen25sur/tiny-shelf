@@ -1,6 +1,6 @@
 {
   "name": "tiny-shelf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tiny-shelf is a lightweight and easy-to-use browser storage manager. It provides a unified API for localStorage and sessionStorage, supports automatic expiration (expires)",
   "keywords": [
     "storage",
@@ -26,7 +26,11 @@
   "author": "Olena Surilova",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tiny-shelf": "file:"
   }
 }
