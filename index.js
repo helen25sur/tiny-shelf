@@ -16,6 +16,7 @@ export class TinyShelf {
       expires: options.expires ? (Date.now() + options.expires) : null,
     };
     this.store.setItem(key, JSON.stringify(data));
+    this.notifyChange(key, value);
   }
 
   get(key) {
@@ -32,10 +33,12 @@ export class TinyShelf {
 
   remove(key) {
     this.store.removeItem(key);
+    this.notifyChange(key, null);
   }
 
   clear() {
     this.store.clear();
+    this.notifyChange(null, null);
   }
 
   onChange(callback) {
