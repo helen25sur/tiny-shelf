@@ -1,6 +1,13 @@
 export class TinyShelf {
   constructor(type = "local") {
     this.store = type === "session" ? sessionStorage : localStorage;
+    this.listeners = new Set();
+
+    window.addEventListener("storage", (event) => {
+      if (event.storageArea === this.store) {
+        this.notifyChange(event.key, event.newValue);
+      }
+    });
   }
 
   set(key, value, options = {}) {
@@ -29,5 +36,17 @@ export class TinyShelf {
 
   clear() {
     this.store.clear();
+  }
+
+  onChange(callback) {
+    this.listeners.add(callback);
+  }
+
+  offChange(callback) {
+    this.listeners.delete(callback);
+  }
+
+  notifyChange(key, value) {
+    this.listeners.forEach((callback) => callback(key, value));
   }
 }
