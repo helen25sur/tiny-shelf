@@ -10,11 +10,11 @@
   console.log(storage.get("user"));
   ```
   
-| Функції	`tiny-shelf` |  |	
+| Feature of `tiny-shelf` |  |	
 | ---------------------- |--|
-| Єдиний API для localStorage та sessionStorage |	✅	|
-| expires (видалення через певний час) |	✅	|
-| Маленький розмір (без залежностей) | 	✅	|
-| onChange для реакції на зміни |	🔜	|
-| Вбудоване шифрування |	🔜	|
-| Підтримка indexedDB |	🔜	|
+| Unified API for `localStorage` and `sessionStorage` |	✅	|
+| expires (auto-removal after a set time) |	✅	|
+| Small size (zero dependencies) | 	✅	|
+| `onChange` for reacting to storage changes |	🔜	|
+| Built-in encryption |	🔜	|
+| IndexedDB support |	🔜	|
