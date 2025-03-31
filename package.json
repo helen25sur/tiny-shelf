@@ -28,9 +28,13 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "dependencies": {
     "tiny-shelf": "file:"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
